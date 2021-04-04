@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-AU-compatible" content="ie=edge">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <!-- Conectando Pagina de estilos -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    
+    <!-- Estilos Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"/>
+    
+    <!-- Estilos IonIcons -->
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    
+    <!-- Estilos font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="Imagenes/Index/logo1.svg">
+    <script defer src="./Tienda.js"></script>
+    <script defer src="./js/jquery-3.6.0.min.js"></script>
+    <title>INICIO</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-toggleable-md sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="./Imagenes/Index/logo1.svg" width="30" height="30" class="d-inline-block align-top" alt="logo"></img>
+                JYT Ingenieros
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav mr-auto text-center ml-auto">
+                    <a class="nav-item nav-link px-4" href="index.html">Inicio</a>
+                    <a class="nav-item nav-link px-4" href="servicios.html">Servicios</a>
+                    <a class="nav-item nav-link px-4" href="nosotros.html">Nosotros</a>
+                    <a class="nav-item nav-link px-4" href="clientes.html">Clientes</a>
+                    <a class="nav-item nav-link px-4" href="productos.html">Tienda</a>
+                    <a class="nav-item nav-link px-4" href="contacto.html">Contacto</a>             
+                </div>
+                <div class="d-flex justify-content-center">
+                    <a href="#" class="btn btn-outline-primary">Iniciar Sesión</a>
+                </div>
+            </div>
+        </div>
+    </nav>  
+    <div class="tituloPrincipal"> 
+        <h1>TIENDA <i class="fas fa-store"></i></h1>
+    </div>
+    <header class="container-fluid alertayNav">
+        <ul class="nav nav-justified mb-5 py-3 container" id="pills-tab" role="tablist">
+            <li class="nav-item barraProducto" role="presentation"><a class="nav-link active tittlenavproduct"
+                id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button"
+                role="tab" aria-controls="pills-profile" aria-selected="false" href="#">PRODUCTOS</a>
+            </li>
+            <li class="nav-item barraCarrito" role="presentation"><a class="nav-link tittlenavcarrito" id="pills-contact-tab"
+                data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                aria-selected="false" href="#"><i class="fas fa-shopping-cart"></i></a>
+            </li>
+        </ul>
+    </header>
+    
+    <div class="alert container position-sticky alert-primary hide alertaAñadio" role="alert">
+        ☑️ Producto Añadido al carrito!
+    </div>
+    <div class="alert container position-sticky alert-primary remove alertaRemovio" role="alert">
+        ❌ Producto removido!
+    </div>    
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            1
+        </div>
+        <div class="tab-pane fade show active container" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center text-white">HP PAVILION GAMING</h5>
+                        <img src="./Imagenes/Tienda/1.jpg" class="card-img-top" alt="..."></img>
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">AMD Ryzen™ H de alto desempeño y gráficos NVIDIA® GeForce® GTX.</p>
+                            <h5 class="text-white">Precio: <span class="precio">$ 3100000</span></h5>
+                            <div class="d-grid gap-2">
+                                <button  class="btn btn-primary button">Añadir a Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center text-white">ACER NITRO</h5>
+                        <img src="./Imagenes/Tienda/2.jpg" class="card-img-top" alt="..."></img>
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">Portátil gaming que junta un procesador de alto rendimiento como el Core i7.</p>
+                            <h5 class="text-white">Precio: <span class="precio">$ 3100000</span></h5>
+                            <div class="d-grid gap-2">
+                                <button  class="btn btn-primary button">Añadir a Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center text-white">HP BLACK EDITION</h5>
+                        <img src="./Imagenes/Tienda/3.jpg" class="card-img-top" alt="..."></img>
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">Experimenta gráficos de alta calidad y potencia de procesamiento para juegos y realización de múltiples tareas.</p>
+                            <h5 class="text-white">Precio: <span class="precio">$ 3500000</span></h5>
+                            <div class="d-grid gap-2">
+                                <button  class="btn btn-primary button">Añadir a Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center text-white">GEFORCE GT 710</h5>
+                        <img src="./Imagenes/Tienda/4.jpg" class="card-img-top" alt="..."></img>
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">Tarjeta gráfica compacta con tres salidas (HDMI, DVI y D-Sub).</p>
+                            <h5 class="text-white">Precio: <span class="precio">$ 1100000</span></h5>
+                            <div class="d-grid gap-2">
+                                <button  class="btn btn-primary button">Añadir a Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center text-white">ASUS GEFORCE GT 1030</h5>
+                        <img src="./Imagenes/Tienda/5.jpg" class="card-img-top" alt="..."></img>
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">Tarjeta gráfica diseñada con un diseño térmico pasivo de alta eficiencia y con 0dB.</p>
+                            <h5 class="text-white">Precio: <span class="precio">$ 1800000</span></h5>
+                            <div class="d-grid gap-2">
+                                <button  class="btn btn-primary button">Añadir a Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center text-white">MSI AMD RADEON RX 550</h5>
+                        <img src="./Imagenes/Tienda/6.jpg" class="card-img-top" alt="..."></img>
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">Permite jugar con múltiples pantallas para una experiencia de juego increíble.</p>
+                            <h5 class="text-white">Precio: <span class="precio">$ 1500000</span></h5>
+                            <div class="d-grid gap-2">
+                                <button  class="btn btn-primary button">Añadir a Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center text-white">OFFICE 365 PREMIUM</h5>
+                        <img src="./Imagenes/Tienda/7.jpg" class="card-img-top" alt="..."></img>
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">Permite crear, acceder y compartir documentos online en Word, Excel, entre otros.</p>
+                            <h5 class="text-white">Precio: <span class="precio">$ 80000</span></h5>
+                            <div class="d-grid gap-2">
+                                <button  class="btn btn-primary button">Añadir a Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center text-white">KASPERSKY INTERNET SECURITY</h5>
+                        <img src="./Imagenes/Tienda/8.jpg" class="card-img-top" alt="..."></img>
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">Producto estrella, protege los PCs de todas las amenazas que se encuentran en Internet.</p>
+                            <h5 class="text-white">Precio: <span class="precio">$ 250000</span></h5>
+                            <div class="d-grid gap-2">
+                                <button  class="btn btn-primary button">Añadir a Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center text-white">PDF EXTRA</h5>
+                        <img src="./Imagenes/Tienda/9.jpg" class="card-img-top" alt="..."></img>
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">Editor todo-en-uno. Tiene todo lo que necesitas para ver, editar y proteger archivos PDF.</p>
+                            <h5 class="text-white">Precio: <span class="precio">$ 150000</span></h5>
+                            <div class="d-grid gap-2">
+                                <button  class="btn btn-primary button">Añadir a Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center text-white">Diadema fnship 3,5 mm</h5>
+                        <img src="./Imagenes/Tienda/10.jpg" class="card-img-top" alt="..."></img>
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">Micrófono USB para PC o Mac, para grabar, emitir pódcasts, streaming y juegos.</p>
+                            <h5 class="text-white">Precio: <span class="precio">$ 200000</span></h5>
+                            <div class="d-grid gap-2">
+                                <button  class="btn btn-primary button">Añadir a Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center text-white">Diadema EasySMX</h5>
+                        <img src="./Imagenes/Tienda/11.jpg" class="card-img-top" alt="..."></img>
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">Diadema con micrófono para PC juego de computadora con cancelación de ruido.</p>
+                            <h5 class="text-white">Precio: <span class="precio">$ 450000</span></h5>
+                            <div class="d-grid gap-2">
+                                <button  class="btn btn-primary button">Añadir a Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center text-white">Marantz Professional Umpire</h5>
+                        <img src="./Imagenes/Tienda/12.jpg" class="card-img-top" alt="..."></img>
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">Micrófono USB para PC o Mac, para grabar, emitir pódcasts, streaming y juegos.</p>
+                            <h5 class="text-white">Precio: <span class="precio">$ 1500000</span></h5>
+                            <div class="d-grid gap-2">
+                                <button  class="btn btn-primary button">Añadir a Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>              
+            </div>    
+        </div>
+        <div class="tab-pane fade carrito" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <br>
+            <table class="table table-hover table-dark">
+                <thead>
+                    <tr class="text-white">
+                        <th scope="col">Productos</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Cantidad</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody">
+                    
+                    <!-- Aquí va ubicado todo lo que se agrega al carrito y queda en la descripción de la tabla -->    
+                    
+                </tbody>
+            </table>
+            <br><br>
+            <div class="row mx-4">
+                <div class="col">
+                    <h3 class="itemCartTotal text-white"></h3>
+                </div>
+                <div class="col d-flex justify-content-end">
+                    <button class="btn btn-primary ml-auto comprarButton" type="button" data-toggle="modal" data-target="#comprarModal">Comprar</button>
+                </div>
+                <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="comprarModalLabel">Compra Exitosa</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Dentro de dos días habiles recibirá su pedido</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <footer class="main-footer">
+        <div class="item-footer">
+            <h2 class="footer__title">Empresa</h2>
+            <p class="footer__txt">La infraestructura de su empresa en manos de profesionales. <br> <i class="text-white">JYT Ingenieros</i> siempre un paso adelante.</p>
+            <cite class="footer__author">Jhon Suárez</cite>
+        </div>
+        <div class="item-footer">
+            <h2 class="footer__title">Contacto</h2>
+            <div class="contact-icon">
+                <i class="fas fa-building"></i>
+                <a class="contact__txt">JYT INGENIEROS SA</a>
+            </div>
+            <div class="contact-icon">
+                <i class="fas fa-phone-square-alt"></i>
+                <a class="contact__txt">479660 ext 102 145</a>
+            </div>
+            <div class="contact-icon">
+                <i class="fas fa-envelope-square"></i>
+                <a class="contact__mail">@jytingenieros.com</a>
+            </div>
+        </div>
+        <div class="item-footer">
+            <h2 class="footer__title">Red Social</h2>
+            <div>
+                <div class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <a class="social__link" href="https://www.facebook.com/facebook">jyt ingenieros</a>
+                </div>
+                <div class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                    <a class="social__link" href="https://twitter.com/home?lang=en">jyt ingenieros</a>
+                </div>
+                <div class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                    <a class="social__link" href="https://www.instagram.com/">jyt ingenieros</a>
+                </div>
+                <div class="social-icon">
+                    <i class="fab fa-pinterest-p"></i>
+                    <a class="social__link" href="https://co.pinterest.com/">jyt ingenieros</a>
+                </div>
+            </div>
+        </div>
+        <div class="item-footer">
+            <h2 class="footer__title">Ubicación<i class="fas fa-map-marker-alt"></i></h2>
+            <p class="footer__txt">Nos econtramos ubicados en el barrio chico</p>
+            <p class="footer__addres">calle 98 #12-10 - Edificio Palmer - oficina 301</p>
+            <div class="imagenContacto">
+                <iframe class="googlemap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d760.9666906815891!2d-74.04878202909337!3d4.768053557354621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f85133efed883%3A0x4411065653955b8f!2sConjunto%20Residencial%20Quintas%20de%20San%20Pedro%203!5e0!3m2!1sen!2sco!4v1614117035937!5m2!1sen!2sco" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <div class="item-copy">
+            <p class="copy">© 2020 jyt ingenieros - Desarrollo Jhon Suárez</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
